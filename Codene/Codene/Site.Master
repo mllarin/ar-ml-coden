@@ -1,0 +1,278 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Codene.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Codene S.A.</title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <link href="~/icono.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Login.css" rel="stylesheet" />
+    <link href="Content/Menu.css" rel="stylesheet" />
+    <link href="Content/normalize.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.2.min.js"></script>
+    <script src="Scripts/slides.min.jquery.js"></script>
+    <script type="text/javascript">
+        function SetTarget() {
+            document.forms[0].target = "_blank";
+            document.forms[0].method = "get";
+        }
+
+        $(function () {
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'images/loading.gif',
+                play: 4000,
+                pause: 1000,
+                hoverPause: false,
+                container: 'slides_container'
+            });
+        });
+
+        $(function () {
+            $('#slides_header').slides({
+                preload: true,
+                preloadImage: 'images/loading.gif',
+                play: 5000,
+                pause: 1500,
+                hoverPause: false,
+                container: 'slides_container_header'
+            });
+        });
+
+    </script>
+
+    <%-- [if gte IE 9]>
+  <style type="text/css">
+    .content-wrapper {
+            filter: none;
+    }
+        </style>
+   <![endif]--%>
+    <link href="Content/master.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                <%--Framework scripts--%>
+                <%--<asp:ScriptReference Name="MsAjaxBundle" />--%>
+                <%--<asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />--%>
+                <%--<asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />--%>
+                <%--Site scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+            <img src="Images/LogoCodene.png" style="position: absolute; left: 30px; top: 35px; z-index: 99999" />
+            <div align="center" style="max-height: 219px; min-height: 120px;">
+                <div style="background-color: #fff; max-height: 100%; left: 0px; width: 100%;" align="right">
+                    <table id="tb_header">
+                        <tr>
+                            <td style="padding: 0px;">
+                                <div id="slides_header" style="display: inline-block;">
+                                    <div id="slides_container_header" class="slides_container_header" runat="server">
+                                        <div>
+                                            <img src="Images/BannerHeader/imagen1.jpg" />
+                                        </div>
+                                        <div>
+                                            <img src="Images/BannerHeader/imagen2.jpg" />
+                                        </div>
+                                        <div>
+                                            <img src="Images/BannerHeader/imagen3.jpg" />
+                                        </div>
+                                        <div>
+                                            <img src="Images/BannerHeader/imagen4.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="padding: 0px;">
+                                <img src="Images/Header.jpg" style="display: inline-block; max-height: 100%; padding-bottom: 5px;" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <%--<div class="content-wrapper" style="width: 1040px; position: relative;">
+                <div>--%>
+            </div>
+            <div align="center" style="min-width: 1150px; height: 45px; background: #348634 none repeat scroll 0 0;">
+                <ul id="menu">
+                    <li>
+                        <a href="default.aspx">HOME</a>
+                    </li>
+                    <li>
+                        <a href="NuestraEmpresa.aspx">NUESTRA EMPRESA</a>
+                        <ul id="Nuestra Empresa">
+                            <li>
+                                <a href="objetivos.aspx">OBJETIVOS</a>
+                            </li>
+                            <li>
+                                <a href="nuestrosClientes.aspx">NUESTROS CLIENTES</a>
+                            </li>
+                            <li>
+                                <a href="dondeEstamos.aspx">¿DONDE ESTAMOS?</a>
+                            </li>
+                            <li>
+                                <a href="tecnologias.aspx">TECNOLOGÍA</a>
+                            </li>
+                            <li>
+                                <a href="verNovedades.aspx">NOVEDADES</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="servicios.aspx">SERVICIOS</a>
+                        <ul id="Servicios">
+                            <li>
+                                <a href="CallCenter.aspx">CALL CENTER</a>
+                            </li>
+                            <li>
+                                <a href="Internet.aspx">INTERNET</a>
+                            </li>
+                            <li>
+                                <a href="PuntoAPunto.aspx">CONEXIÓN PUNTO A PUNTO</a>
+                            </li>
+                            <li>
+                                <a href="Cobranzas.aspx">COBRANZAS</a>
+                            </li>
+                            <li>
+                                <a href="ServiciosAdicionales.aspx">SERVICIOS ADICIONALES</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="Asociarse.aspx">SEA NUESTRO CLIENTE</a>
+                    </li>
+                    <li><a href="preguntasFrecuentes.aspx">PREGUNTAS FRECUENTES</a>
+                    </li>
+                    <li><a href="#">ROBO DE IDENTIDAD</a>
+                        <ul id="Robo de Identidad">
+                            <li>
+                                <a href="proximamente.aspx">¿COMO PROTEGERSE?</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="privacidad.aspx">PRIVACIDAD</a>
+                        <ul id="Privacidad">
+                            <li>
+                                <a href="terminosdeuso.aspx">TERMINOS DE USO</a>
+                            </li>
+                            <li>
+                                <a href="habeas-data.aspx">HABEAS DATA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="verPrensa.aspx">PRENSA</a>
+                </ul>
+            </div>
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <%--style="background: url(images/fondo-blanco.png) repeat-y; max-width: 1200px; padding-top: 40px;"--%>
+            <table align="center">
+                <tr>
+                    <td style="vertical-align: top; max-width: 190px;padding:0em 2em 0.25em 0em;">
+                        <div id="ImgLogin">
+                            <div class="header">
+                                <img src="Images/imgIniciarSesion.jpg" />
+                                <asp:Label ID="lblIniciarSesion" runat="server" Text="INICIAR SESIÓN" Style="color: #195019; vertical-align: super;"></asp:Label>
+                            </div>
+                            <div class="content">
+                                <asp:Label runat="server" ID="lblUsuario" Text="USUARIO" Style="text-align: left;"></asp:Label>
+                                <div>
+                                    <img src="Images/imgLoginUsuario.png" /><asp:TextBox ID="UserID" runat="server"></asp:TextBox>
+                                </div>
+                                <div>
+                                    <asp:Label runat="server" ID="lblContrasenia" Text="CONTRASEÑA" Style="text-align: left;"></asp:Label>
+                                </div>
+                                <img src="Images/imgLoginPassword.png" /><asp:TextBox ID="Contrasenia" runat="server" TextMode="Password"></asp:TextBox>
+                                <br />
+                            </div>
+
+                            <div style="text-align: center;">
+                                <asp:Button ID="btnIniciarSesion" runat="server" Style="background-color: #a9a9a9; font-weight: bold; padding: 5px 15px 5px 15px; border: hidden;" Text="INGRESAR" ToolTip="INGRESAR" OnClientClick="SetTarget();" OnClick="btnIniciarSesion_Click" />
+                                <%--<asp:ImageButton ID="btnIniciarSesion" runat="server" ImageUrl="images/btn-login.png" Style="width: 34px; height: 34px; border: 0; background-color: transparent; padding: 0; margin: 0;" ToolTip="Iniciar Sesión" OnClick="btnIniciarSesion_Click" OnClientClick="SetTarget();" />--%>
+                            </div>
+                        </div>
+                        <div id="Cotizacion">
+                            <iframe src="http://www.cotizacion-dolar.com.ar/recursos-webmaster/formal-cd/cotizacion-en-tu-sitio.php" width="120" height="100" scrolling="no" frameborder="0"></iframe>
+                        </div>
+
+                        <%-- BANNERS LEFT --%>
+                        <asp:Panel ID="pnlBannerLeft" runat="server" CssClass="master-left" Style="margin-left: 50px;">
+
+                            <div id="slides">
+                                <div id="slideContainer" class="slides_container" runat="server">
+                                </div>
+                            </div>
+                        </asp:Panel>
+                        <a title="NOVEDADES" href="novedades.aspx" style="margin-left: 50px;">
+                            <img src="Images/novedades.png" />
+                        </a>
+                        <%--<a title="Data Fiscal" href="http://qr.afip.gob.ar/?qr=_4KNNGZQfAglbbSTvBaHhg,," target="_F960AFIPInfo" style="margin-left: 50px;">
+                            <img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" width="47px" height="64px" border="0" alt="Data Fiscal"></img>
+                        </a>--%>
+                    </td>
+                    <td style="vertical-align: top; width: 730px; min-width: 730px;">
+                        <table class="subBarraMenu">
+                            <tr>
+                                <td style="width: 49%"><a href="consultaMisDatos.aspx">
+                                    <img src="Images/ConsultaTusDatos.jpg" />
+                                    CONSULTÁ TUS DATOS</a></td>
+                                <td style="width: 2%; font-size: 30px; font-weight: lighter;">|</td>
+                                <td style="width: 49%"><a href="EnviaTuCV.aspx">
+                                    <img src="Images/envianosTuCV.jpg" />ENVIÁNOS TU CV</a></td>
+                            </tr>
+                        </table>
+                        <%--<b style="font-size: 30px; padding-left: 290px; padding-right: 20px; font-weight: lighter; position: absolute;">|</b>--%>
+                        <%--<div class="subBarraMenu">--%>
+
+
+                        <%--</div>--%>
+                        <div style="margin-left: 40px; background-color: #e5e5e5; width: 100%;">
+                            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                        </div>
+                    </td>
+                    <%--<td style="padding-top: 30px; vertical-align: top; width: 250px; padding-left: 30px;">
+                        <asp:Panel ID="pnlBannerRight" runat="server" CssClass="master-right">                            
+                        </asp:Panel>
+                    </td>--%>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div align="center">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="Images/LogoPie.png" style="padding-left: 10px;" /></td>
+                            <td>|&nbsp;&nbsp;</td>
+                            <td>
+                                <p style="padding-top: 0px;">CASA CENTRAL: MINISTRO ALCORTA 30, PISO 3, OFICINAS 3 Y 4 - (0299) 4484664 / 4484689</p>
+                            </td>
+                            <td>
+                                <a title="Data Fiscal" href="http://qr.afip.gob.ar/?qr=_4KNNGZQfAglbbSTvBaHhg,," target="_F960AFIPInfo" style="margin-left: 50px;">
+                                    <img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" width="30px" height="45px" border="0" alt="Data Fiscal"></img>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

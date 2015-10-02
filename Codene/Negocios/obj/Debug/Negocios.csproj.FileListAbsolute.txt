@@ -1,0 +1,21 @@
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\bin\Debug\Negocios.dll
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\bin\Debug\Datos.dll
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\bin\Debug\Objetos.dll
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\bin\Debug\Datos.pdb
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\bin\Debug\Objetos.pdb
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\obj\Debug\Negocios.dll
+C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\obj\Debug\Negocios.pdb
+E:\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+E:\Negocios\obj\Debug\Negocios.dll
+E:\Negocios\obj\Debug\Negocios.pdb
+C:\Codene\Negocios\bin\Debug\Negocios.dll
+C:\Codene\Negocios\bin\Debug\Negocios.pdb
+C:\Codene\Negocios\bin\Debug\Datos.dll
+C:\Codene\Negocios\bin\Debug\Objetos.dll
+C:\Codene\Negocios\bin\Debug\Datos.pdb
+C:\Codene\Negocios\bin\Debug\Objetos.pdb
+C:\Codene\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Codene\Negocios\obj\Debug\Negocios.dll
+C:\Codene\Negocios\obj\Debug\Negocios.pdb

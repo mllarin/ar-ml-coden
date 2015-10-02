@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <!--<script src="Scripts/jquery-1.8.2.min.js"></script>-->
+    <script src="Scripts/slides.min.jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'images/loading.gif',
+                play: 5000,
+                pause: 1500,
+                hoverPause: true
+            });
+        });
+
+    </script>
+
+    <style type="text/css">
+        #slides {
+            /*position: absolute;
+	top: 180px;
+	left: 15px;*/
+            padding-top: 5px;
+            z-index: 100;
+        }
+
+        /*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+        .slides_container {
+            width: 150px;
+            overflow: hidden;
+            position: relative;
+            display: none;
+            /*left: -42px;*/
+        }
+
+            .slides_container div {
+                width: 150px;
+                height: 145px;
+                display: block;
+            }
+
+            .slides_container img a {
+                display: block;
+            }
+
+        /*
+	Next/prev buttons
+*/
+
+        #slides .next, #slides .prev {
+            position: absolute;
+            top: 370px;
+            width: 24px;
+            /*left: -15px;*/
+            height: 43px;
+            display: block;
+            z-index: 101;
+            display: none;
+        }
+
+        #slides .next {
+            left: 870px;
+        }
+
+        .pagination {
+            margin: 0px 0px 0px 0px;
+            width: 100px;
+        }
+
+            .pagination li {
+                float: left;
+                margin: 0 1px;
+                list-style: none;
+            }
+
+                .pagination li a {
+                    display: block;
+                    width: 12px;
+                    height: 0;
+                    padding-top: 12px;
+                    background-image: url(../img-slides/pagination.png);
+                    background-position: 0 0;
+                    float: left;
+                    overflow: hidden;
+                }
+
+                .pagination li.current a {
+                    background-position: 0 -12px;
+                }
+    </style>
+</head>
+<body>
+    <div id="slides">
+        <div id="slideContainer" class="slides_container" runat="server">
+
+            <div>
+                <img alt="#0" src="Images/Editar.png" />
+            </div>
+
+            <div>
+                <img alt="#1" src="Images/btn-login.png" />
+            </div>
+            <div>
+                <img alt="#2" src="Images/calendar.jpg" />
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

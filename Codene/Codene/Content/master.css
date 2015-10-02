@@ -1,0 +1,86 @@
+﻿#lnkHome a {
+            width: 480px;
+            height: 76px;
+            position: absolute;
+            top: 22px;
+            left: 155px;
+            text-decoration: none;
+        }
+
+            #lnkHome a:hover {
+                background-color: transparent;
+            }
+
+        #slides {
+            padding-top: 5px;
+            z-index: 100;
+        }
+
+        #slides_header {
+            padding-top: 0px;
+            z-index: 100;
+        }
+
+        .slides_container {
+            width: 150px;
+            overflow: hidden;
+            position: relative;
+            display: none;
+        }
+
+            .slides_container div {
+                width: 150px;
+                height: 145px;
+                display: block;
+            }
+
+            .slides_container img a {
+                display: block;
+            }
+
+        .slides_container_header {
+            width: 642px;
+            overflow: hidden;
+            position: relative;
+            display: none;
+        }
+
+            .slides_container_header div {
+                width: 642px;
+                height: 219px;
+                display: inline-block;
+            }
+
+            .slides_container_header img a {
+                display: block;
+            }
+
+        .pagination {
+            margin: 0px 0px 0px 0px;
+            width: 0px;
+        }
+
+            .pagination li {
+                float: left;
+                margin: 0 1px;
+                list-style: none;
+            }
+
+                .pagination li a {
+                    display: block;
+                    width: 12px;
+                    height: 0;
+                    padding-top: 12px;
+                    background-image: url(../img-slides/pagination.png);
+                    background-position: 0 0;
+                    float: left;
+                    overflow: hidden;
+                }
+
+                .pagination li.current a {
+                    background-position: 0 -12px;
+                }
+
+        #tb_header tbody {
+            vertical-align: top;
+        }

@@ -1,0 +1,131 @@
+﻿
+#CabFlash {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#CabImg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#Cotizacion {
+    width: 248px;
+    height: 85px;
+    background-color: rgba(12, 224, 160, 0.8);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+
+#loginGestion {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 350px;
+    height: 130px;
+    background-color: #ceb247;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+    #loginGestion div span {
+        width: 150px;
+        padding: 5px;
+    }
+
+    #loginGestion div input[type="text"], #loginGestion div input[type="password"] {
+        width: 150px;
+        padding: 5px;
+    }
+
+    input[type="submit"], #loginGestion #btnLogin {
+        background-color: rgb(166, 187, 108);
+        border: 1px solid #fff;
+        cursor: pointer;
+        font-size: 1em;
+        padding: 10px;
+        width: auto;
+        border-radius: 5px;
+    }
+
+        input[type="submit"]:hover, #loginGestion #btnLogin:hover {
+            color: #fff;
+        }
+
+input, textarea, password {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #333;
+}
+
+.CPO {
+    position: absolute;
+    font-size: 12px;
+    top: 280px;
+    left: 0px;
+    background: url(imagenes/fondo-blanco.png) repeat-y;
+    width: 1040px;
+    z-index: 1;
+}
+
+.SinMargen {
+    width: 550px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.CONT {
+    width: 950px;
+    height: 150px;
+    height: auto!important;
+    min-height: 150px;
+    margin: 40px 45px 10px;
+}
+
+.EnlacesCuerpo a {
+    color: #00CC00;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 7px;
+}
+
+    .EnlacesCuerpo a:visited {
+        color: #00CC00;
+    }
+
+    .EnlacesCuerpo a:hover {
+        text-decoration: underline;
+    }
+
+.FAQS div {
+    visibility: hidden;
+    height: 0px;
+}
+
+.DER {
+    padding: 3px;
+    text-align: center;
+}
+
+    .DER img {
+        margin: 4px 2px;
+        /*float:left;*/
+    }
+
+
+.Clear {
+    clear: both;
+}
+
+#map_canvas1 {
+    width: 100%;
+    height: 300px;
+}
