@@ -129,9 +129,7 @@
                             <li>
                                 <a href="tecnologias.aspx">TECNOLOGÍA</a>
                             </li>
-                            <li>
-                                <a href="verNovedades.aspx">NOVEDADES</a>
-                            </li>
+                            
                         </ul>
                     </li>
                     <li><a href="servicios.aspx">SERVICIOS</a>
@@ -218,7 +216,7 @@
                                 </div>
                             </div>
                         </asp:Panel>
-                        <a title="NOVEDADES" href="novedades.aspx" style="margin-left: 50px;">
+                        <a title="NOVEDADES" href="verNovedades.aspx" style="margin-left: 50px;">
                             <img src="Images/novedades.png" />
                         </a>
                         <%--<a title="Data Fiscal" href="http://qr.afip.gob.ar/?qr=_4KNNGZQfAglbbSTvBaHhg,," target="_F960AFIPInfo" style="margin-left: 50px;">

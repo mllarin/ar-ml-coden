@@ -34,9 +34,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
     <section class="featured">
         <div class="content-wrapper">
-            <hgroup class="title">
-                <h3>Novedades</h3>
-            </hgroup>
+            
         </div>
     </section>
 </asp:Content>
@@ -81,7 +79,7 @@
                     </div>
                     <div>
                 <label for="lblCuerpoVer">Cuerpo de la Novedad</label>
-                <asp:TextBox ID="txtCuerpoVer" Wrap="true" Enabled="false" Height="250px" Width="300px" runat="server"></asp:TextBox>
+                <asp:TextBox TextMode="MultiLine" ID="txtCuerpoVer" Wrap="true" Enabled="false" Height="250px" Width="300px" runat="server"></asp:TextBox>
                 </div>
                     
                 </div>

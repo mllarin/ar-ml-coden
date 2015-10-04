@@ -18,9 +18,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
     <section class="featured">
         <div class="content-wrapper">
-            <hgroup class="title">
-                <h3>Prensa</h3>
-            </hgroup>
+            
         </div>
     </section>
 </asp:Content>

@@ -57,7 +57,7 @@
             </div>
             <div>
                 <label for="nombre">Cuerpo de la Novedad</label>
-                <asp:TextBox Width="250" Height="250" ID="txtCuerpo" runat="server"></asp:TextBox>
+                <asp:TextBox TextMode="MultiLine" Width="70%" Height="250" ID="txtCuerpo" runat="server"></asp:TextBox>
             </div>
             
             <asp:Button ID="btnGuardar" runat="server" Style="margin-top: 10px;" Text="Guardar" OnClick="btnGuardar_Click" />
@@ -112,7 +112,7 @@
                     </div>
                     <div>
                 <label for="cuerpoEditar">Cuerpo de la Novedad</label>
-                <asp:TextBox ID="txtCuerpoEditar" runat="server"></asp:TextBox>
+                <asp:TextBox TextMode="MultiLine" ID="txtCuerpoEditar" runat="server"></asp:TextBox>
                 </div>
                     <asp:Button ID="BtnModificar" runat="server" Style="margin-top: 10px;" Text="Modificar" OnClick="BtnModificar_Click" />
                 </div>

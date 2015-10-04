@@ -157,7 +157,7 @@ namespace Codene.Gestion
             }
             else
             {
-                Response.Write("<script type='text/javascript' language='javascript'> alert('La documento seleccionada ya se encuentra cargada.');</script>");
+                Response.Write("<script type='text/javascript' language='javascript'> alert('La entrada de prensa seleccionada ya se encuentra cargada.');</script>");
             }
         }
 
