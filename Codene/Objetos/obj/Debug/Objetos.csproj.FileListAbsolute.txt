@@ -1,4 +1,0 @@
-C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Objetos\bin\Debug\Objetos.dll
-C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Objetos\bin\Debug\Objetos.pdb
-C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Objetos\obj\Debug\Objetos.dll
-C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Objetos\obj\Debug\Objetos.pdb
