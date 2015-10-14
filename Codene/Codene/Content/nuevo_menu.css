@@ -1,0 +1,71 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  padding: 20px 20px 150px;
+  font-size: 13px;
+  text-align: center;
+  background: #e1e1e1;
+}
+
+#tabs26 ul {
+  text-align: center;
+  display: inline;
+  list-style: none;
+
+}
+#tabs26 li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;  position: relative;
+  padding: 20px 10px 20px 10px;
+  background: #fff;
+  color:#49B749;
+  cursor: pointer;
+  border-left:1px #EAEAEA solid;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#tabs26 li:hover {
+  background: #49B749;
+  color: #fff;
+}
+#tabs26 li ul {
+  padding: 0px;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+#tabs26 li ul li { 
+	background: #26A330;
+	display: block;
+	color: #fff;
+	margin-top: 15px;
+	margin-bottom: -15px;
+	padding: 10px 3px 8px 3px;
+	text-shadow: 0 -1px 0 #000;
+}
+#tabs26 li ul li:hover {
+background: #26A330;
+border-right:3px solid #fff;
+border-left:3px solid #fff;
+}
+
+#tabs26 li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}

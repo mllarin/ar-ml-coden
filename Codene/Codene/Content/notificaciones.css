@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿.notificaciones {
     font-family: 'Segoe UI';
     width:500px;
@@ -25,4 +26,33 @@
 
         .notificaciones div p {
             font-size: 0.8em;
+=======
+﻿.notificaciones {
+    font-family: 'Segoe UI';
+    width:500px;
+}
+
+    .notificaciones div {
+        background-color:#99f8a5;
+        padding: 0px 5px 2px 5px;
+        margin-bottom:5px;
+    }
+        .notificaciones div div {
+            position:absolute;
+            height:18px;
+            vertical-align:middle;
+            border:1px solid #e9e8e8;
+            margin-left:476px;
+            cursor:pointer;
+        }
+    .notificaciones div h3 {
+        background-color:#4cbe5a;
+        padding-left:5px;
+        font-weight:bold;
+            font-size: 1em;
+    }
+
+        .notificaciones div p {
+            font-size: 0.8em;
+>>>>>>> refs/remotes/origin/mllarin
         }
