@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Gestion.Master.cs" Inherits="Codene.Gestion.Gestion" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title>Codene S.A. - Gestión</title>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <link href="~/icono.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Login.css" rel="stylesheet" />
+    <link href="Content/Menu.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function SetTarget() {
+            document.forms[0].target = "_blank";
+            document.forms[0].method = "get";
+        }
+    </script>
+    <style type="text/css">
+        #lnkHome a {
+            width: 450px;
+            height: 76px;
+            position: absolute;
+            top: 22px;
+            left: 203px;
+            text-decoration: none;
+        }
+
+            #lnkHome a:hover {
+                background-color: transparent;
+            }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server" style="background-color: #53b460">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="float-left">
+                <embed width="950" height="217" src="cabecera2.swf" quality="high" title="Codene" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" />
+            </div>
+        </div>
+        <div id="body">
+            <div id="lnkHome">
+                <a href="Default.aspx"></a>
+            </div>
+            <div id="Cotizacion">
+                <iframe src="http://www.cotizacion-dolar.com.ar/recursos-webmaster/classic-cd/dolar_euro_234x90_orange.php" width="238" height="75" scrolling="no" frameborder="0"></iframe>
+            </div>
+            <div style="margin-left: 50px; min-width: 1150px; display: table" runat="server" id="displayMenu">
+                <img style="width: 18px; height: 45px; float: left;" alt="" src="Images/Menu/menu_left.png" />
+                <img style="width: 20px; height: 45px; float: left;" alt="" src="Images/Menu/menu_center_left.png" />
+                <ul id="menu">
+                    <li class="logo">
+                        <ul id="main">
+                        </ul>
+                    </li>
+                    <li><a href="Banners.aspx">Banners</a>
+                    </li>
+                    <li><a href="Notificaciones.aspx">Notificaciones</a>
+                    </li>
+                    <li><a href="Novedades.aspx">Novedades</a>
+                    </li>
+                    <li><a href="ValoresProductos.aspx">Valores Productos</a>
+                    </li>
+                    <li><a href="Prensa.aspx">Prensa</a></li>
+                </ul>
+                <img style="float: left;" alt="" src="Images/Menu/menu_center.png" />
+                <img style="float: left;" alt="" src="Images/Menu/menu_right.png" />
+            </div>
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper clear-fix" style="margin-left: 10px;">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <img src="Images/pie.png" />
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

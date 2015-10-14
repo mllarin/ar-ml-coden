@@ -1,0 +1,342 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Codene.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Codene S.A.</title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="Content/css" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link href="~/icono.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/Login.css" rel="stylesheet" />
+    <link href="Content/Menu.css" rel="stylesheet" />
+    <link href="Content/normalize.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/otro_menu.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.2.min.js"></script>
+    <script src="http://tianguisalacarta.com.ar/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        // THIS SCRIPT DETECTS THE ACTIVE ELEMENT AND ADDS ACTIVE CLASS
+        (function ($) {
+            $(document).ready(function () {
+                var pathname = window.location.pathname,
+                    page = pathname.split(/[/ ]+/).pop(),
+                    menuItems = $('#Menuc a');
+                menuItems.each(function () {
+                    var mi = $(this),
+                        miHrefs = mi.attr("href"),
+                        miParents = mi.parents('li');
+                    if (page == miHrefs) {
+                        miParents.addClass("active").siblings().removeClass('active');
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
+    <script type="text/javascript">
+        function SetTarget() {
+            document.forms[0].target = "_blank";
+            document.forms[0].method = "get";
+        }
+
+        $(function () {
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'images/loading.gif',
+                play: 4000,
+                pause: 1000,
+                hoverPause: false,
+                container: 'slides_container'
+            });
+        });
+
+        $(function () {
+            $('#slides_header').slides({
+                preload: true,
+                preloadImage: 'images/loading.gif',
+                play: 5000,
+                pause: 1500,
+                hoverPause: false,
+                container: 'slides_container_header'
+            });
+        });
+    </script>
+    <%-- [if gte IE 9]>
+  <style type="text/css">
+    .content-wrapper {
+            filter: none;
+    }
+        </style>
+   <![endif]--%>
+    <link href="Content/master.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+            <a href="default.aspx">
+                <img src="Images/LogoCodene.png" id="Logo" /></a>
+            <div id="wb_CssMenu1" style="position: absolute; margin-left: 228px; padding-top: 20px; width: 911px; height: 75px; text-align: center; z-index: 99899;">
+                <ul>
+                    <li class="firstmain"><a href="default.aspx" target="_self">Inicio</a>
+                    </li>
+                    <li><a class="withsubmenu" href="nuestraempresa.aspx" target="_self">
+                        <div>Nuestra</div>
+                        <div>empresa</div>
+                    </a>
+
+                        <ul>
+                            <li class="firstitem"><a href="Mision.aspx" target="_self">Misi&oacute;n</a>
+                            </li>
+                            <li><a href="Vision.aspx" target="_self">Visi&oacute;n</a>
+                            </li>
+                            <li><a href="Beneficios.aspx" target="_self">Beneficios</a>
+                            </li>
+                            <li><a href="dondeestamos.aspx" target="_self">D&#243;nde&nbsp;estamos</a>
+                            </li>
+                            <li><a href="nuestrosclientes.aspx" target="_self">Nuestros&nbsp;clientes</a>
+                        </ul>
+                    </li>
+                    <li><a class="withsubmenu" href="servicios.aspx" target="_self">Servicios</a>
+
+                        <ul>
+                            <li class="firstitem"><a href="callcenter.aspx" target="_self">Call&nbsp;center</a>
+                            </li>
+                            <li><a href="internet.aspx" target="_self">Internet</a>
+                            </li>
+                            <li><a href="puntoapunto.aspx" target="_self">Conexi&#243;n</a>
+                            </li>
+                            <li><a href="cobranzas.aspx" target="_self">Cobranzas</a>
+                            </li>
+                            <li class="lastitem"><a href="serviciosadicionales.aspx" target="_self">Servicios&nbsp;adicionales</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="asociarse.aspx" target="_self">
+                        <div>Sea nuestro</div>
+                        <div>cliente</div>
+                    </a>
+                    </li>
+                    <li><a href="preguntasfrecuentes.aspx" target="_self">
+                        <div>Preguntas</div>
+                        <div>frecuentes</div>
+                    </a>
+                    </li>
+                    <li><a href="robodeidentidad.aspx" target="_self">
+                        <div>Robo de</div>
+                        <div>identidad</div>
+                    </a>
+                    </li>
+                    <li><a class="withsubmenu" href="privacidad.aspx" target="_self">Privacidad</a>
+                        <ul>
+                            <li class="firstitem"><a href="terminosdeuso.aspx" target="_self">T&#233;rminos&nbsp;de&nbsp;uso</a>
+                            </li>
+                            <li class="lastitem"><a href="habeas-data.aspx" target="_self">Habeas&nbsp;Data</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="verprensa.aspx" target="_self">Prensa</a>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <table>
+                <tr>
+                    <td style="vertical-align: top; padding: 0em 2em 0.25em 0em; width: 284px;">
+                        <div id="ImgLogin">
+                            <div class="header">
+                                <asp:Label ID="lblIniciarSesion" runat="server" Text="Iniciar Sesi&oacuten" Style="color: #888888; font-weight: 800; vertical-align: super;"></asp:Label>
+                            </div>
+                            <div class="content">
+                                <asp:Label runat="server" ID="lblUsuario" Text="Usuario" Style="text-align: left;"></asp:Label>
+                                <div>
+                                    <asp:TextBox ID="UserID" runat="server"></asp:TextBox>
+                                </div>
+                                <div>
+                                    <asp:Label runat="server" ID="lblContrasenia" Text="Contrase&ntildea" Style="text-align: left;"></asp:Label>
+                                </div>
+                                <asp:TextBox ID="Contrasenia" runat="server" TextMode="Password"></asp:TextBox>
+                                <br />
+                            </div>
+                            <div style="text-align: center;">
+                                <asp:Button ID="btnIniciarSesion" runat="server" Style="background-color: #49B749; color: #fff; padding: 5px 24px 5px 24px; margin-top: 8px; border: hidden; border-radius: 3px;" Text="Ingresar" ToolTip="INGRESAR" OnClientClick="SetTarget();" OnClick="btnIniciarSesion_Click" />
+                            </div>
+                        </div>
+                        <a title="NOVEDADES" href="vernovedades.aspx">
+                            <img src="Images/novedades.png" style="margin-left: 39px;"></a>
+                        <div id="wb_Image1" style="position: relative; margin-left: 40px; width: 225px; height: 132px; z-index: 1;">
+                            <img src="images/cotizacion2.png" id="Imagecoti" alt="">
+                            <div id="Html1" style="position: absolute; margin-top: -100px; color: #fff; margin-left: 50px; width: 177px; font-size: 12px; height: 26px; z-index: 2">
+                                <script> var meses = new Array("Ene", "Febr", "Marzo", "Abril", "Mayo", "Jun", "Jul", "Agos", "Sept", "Oct", "Nov", "Dic"); var diasSemana = new Array("Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"); var f = new Date(); document.write(diasSemana[f.getDay()] + " " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()); </script>
+                            </div>
+                            <div id="Html2" style="position: absolute; width: 150px; margin-top: -75px; margin-left: 75px; line-height: 18px; height: 55px; z-index: 3">
+                                <span id="cotizacion_personalizada" class="cotizacion_personalizada">
+                                    <a href="http://www.dolarcito.com.ar/?ver=cotizacion_de_divisa&divisa=1">D&oacute;lar</a> ${dolar_c} / ${dolar_v}<br>
+                                    <a href="http://www.dolarcito.com.ar/?ver=cotizacion_de_divisa&divisa=2">Euro</a> ${euro_c} / ${euro_v}<br>
+                                    <a href="http://www.dolarcito.com.ar/?ver=cotizacion_de_divisa&divisa=3">Real</a> ${real_c} / ${real_v}<br>
+                                </span>
+                                <script src="http://www.dolarcito.com.ar/scripts/cotizacion_personalizada.js" language="javascript"></script>
+                                <script language="javascript">show(s_cotizacion_personalizada)</script>
+                            </div>
+                        </div>
+
+                        <%-- BANNERS LEFT --%>
+                        <asp:Panel ID="pnlBannerLeft" runat="server" CssClass="master-left" Style="margin-left: 50px;">
+                            <div id="slides">
+                                <div id="slideContainer" class="slides_container" runat="server">
+                                </div>
+                            </div>
+                        </asp:Panel>
+                        <a href="EnviaTuCV.aspx">
+                            <img src="Images/enviocv.png" style="margin: 50px 0px 0px 40px;"></a>
+                    </td>
+                    <td style="vertical-align: top;">
+
+                        <div style="width: 100%;">
+                            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="fila">
+                <div class="columna-footer" style="line-height: 17px;">
+                    <button style="margin-bottom: 10px; margin-top: 0px; margin-left: 38px;">MAPA DEL SITIO</button>
+                    <div class="clear"></div>
+                    <ul>
+                        <li><a href="default.aspx">Inicio</a></li>
+                        <li><a href="#"></a></li>
+                        <br />
+                        <li><a href="nuestraempresa.aspx">Nuestra empresa</a>
+                            <ul>
+                                <li><a href="Mision.aspx">Misi&oacute;n</a></li>
+
+                                <li><a href="Vision.aspx">Visi&oacute;n</a></li>
+
+                                <li><a href="Beneficios.aspx">Beneficios</a></li>
+
+                                <li><a href="dondeestamos.aspx">&#191;D&oacutende estamos?</a></li>
+
+                                <li><a href="nuestrosclientes.aspx">Nuestros clientes</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="servicios.aspx">Servicios</a>
+                            <ul>
+                                <li><a href="callcenter.aspx">Call center</a></li>
+                                <li><a href="internet.aspx">Internet</a></li>
+                                <li><a href="puntoapunto.aspx">Conexi&oacuten</a></li>
+                                <li><a href="cobranzas.aspx">Cobranzas</a></li>
+                                <li><a href="serviciosadicionales.aspx">Servicios adicionales</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna-footer" style="margin-top: 37px; line-height: 21px;">
+                    <div class="clear"></div>
+                    <ul>
+                        <li><a href="asociarse.aspx">Sea nuestro cliente</a></li>
+                        <li><a href="#"></a></li>
+                        <br />
+                        <li><a href="preguntasfrecuentes.aspx">Preguntas frecuentes</a></li>
+                        <li><a href="#"></a></li>
+                        <br />
+                        <li><a href="robodeidentidad.aspx">Robo de identidad</a></li>
+                        <br />
+                        <li><a href="#"></a></li>
+                        <li><a href="privacidad.aspx">Privacidad</a>
+                            <ul>
+                                <li><a href="terminosdeuso.aspx">T&eacuterminos de uso</a></li>
+                                <li><a href="habeas-data.aspx">Habeas Data</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="enviatucv.aspx">Envianos tu Curriculum Vitae</a></li>
+                        <li><a href="#"></a>
+                        </li>
+                        <br />
+                        <li><a href="default.aspx">Consulta tus datos</a></li>
+                        <li><a href="#"></a></li>
+                        <br />
+                    </ul>
+                </div>
+                <div class="columna-footer" style="line-height: 14px;">
+                    <button style="margin-bottom: 10px; margin-top: 0px; margin-left: 38px;">LINKS DE INTERESES</button>
+                    <div class="clear"></div>
+                    <ul>
+                        <li><a href="http://anses.gov.ar">Anses</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="http://paginasamarillas.com.ar">P&aacuteginas amarillas</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="http://jus.gob.ar/datos-personales.aspx/">PDP (Direcci&oacuten Nacional de datos personales)</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="http://afip.gov.ar">A.F.I.P</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="http://redlink.com.ar">LINK</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="http://banelco.com">BANELCO</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="http://bcra.com.ar">BCRA</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="http://defiendase.com">Defi&eacutendase</a></li>
+                        <li><a href="#"></a>
+                            <br />
+                        </li>
+                        <li><a href="#">Calcul&aacute tu pr&eacutestamo</a></li>
+                    </ul>
+                </div>
+                <div class="columna-footer">
+                    <button style="margin-bottom: 10px; margin-top: 0px; margin-left: 38px;">LA EMPRESA</button>
+                    <ul style="2">
+                        <li><b>Casa Central:</b> Ministro Alcorta 30, Piso 3, Oficina 3, Neuqu&eacuten.<br />
+                            Tel: (0299) 4484664 / 4484689</li>
+                        <li>
+                            <br />
+                        </li>
+                        <li><b>Trelew:</b> San Mart&iacute;n 306, Piso 1, Oficina 2, Chubut. Tel: (0280) 442-3200</li>
+                        <li>
+                            <br />
+                        </li>
+                    </ul>
+                    <a href="http://www.jus.gov.ar/datos-personales.aspx/" target="_blank">
+                        <img src="Images/pdp.png" style="margin-right: 127px; margin-top: -10px; margin-left: 38px; width: 60px;" /></a>
+                    <a href="http://qr.afip.gob.ar/?qr=_4KNNGZQfAglbbSTvBaHhg,," target="_blank">
+                        <img src="Images/datafiscal.png" style="margin-right: 148px; margin-top: 40px; margin-left: 38px; width: 40px;" /></a>
+                    <img style="margin-top: -135px; margin-left: 96px; width: 170px;" src="Images/logogris.png" />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </footer>
+        <script src="Scripts/slides.min.jquery.js"></script>
+    </form>
+</body>
+</html>
