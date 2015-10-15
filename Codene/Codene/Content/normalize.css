@@ -7,11 +7,7 @@
  */
 
 html {
-<<<<<<< HEAD
-  font-family: 'Segoe UI'; /*sans-serif;*/ /* 1 */
-=======
   font-family: 'Droid Sans', sans-serif;
->>>>>>> refs/remotes/origin/mllarin
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -234,11 +230,7 @@ code,
 kbd,
 pre,
 samp {
-<<<<<<< HEAD
-  font-family: monospace, monospace;
-=======
   font-family: 'Droid Sans', sans-serif;
->>>>>>> refs/remotes/origin/mllarin
   font-size: 1em;
 }
 
@@ -285,10 +277,7 @@ button {
 button,
 select {
   text-transform: none;
-<<<<<<< HEAD
-=======
     width: 234px;
->>>>>>> refs/remotes/origin/mllarin
 }
 
 /**
