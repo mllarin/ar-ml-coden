@@ -48,5 +48,22 @@ namespace Codene
 
             return lstNotificaciones;
         }
+
+        public string readNotificacion(long idNotificacion, string idUsuario)
+        {
+            oNotificacion unaNotificacionO = new oNotificacion();
+            nNotificacion notificacionN = new nNotificacion();
+            string sError = notificacionN.NotificarLeida(idNotificacion, idUsuario);
+            return sError;
+        }
+
+        public void modificarNotificacion(long idNotificacion, string idUsuario, string texto)
+        {
+            oNotificacion unaNotificacionO = new oNotificacion();
+            nNotificacion notificacionN = new nNotificacion();
+            
+        }
+
+
     }
 }

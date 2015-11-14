@@ -7,3 +7,12 @@ C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\bin\Debug
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\obj\Debug\Negocios.dll
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\bin\Debug\Negocios.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\bin\Debug\Datos.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\bin\Debug\Objetos.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\bin\Debug\Datos.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\bin\Debug\Objetos.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\obj\Debug\Negocios.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Negocios\obj\Debug\Negocios.pdb

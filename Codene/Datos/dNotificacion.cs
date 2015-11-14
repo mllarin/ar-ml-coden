@@ -78,6 +78,35 @@ namespace Datos
             }
 
         }
+
+        public string Modificar(long pE_idNotificacion, string pE_idUsuario, string texto, bool cuerpo)
+        {
+            try
+            {
+                if (cuerpo)
+                {
+                    string[,] strParameters = { { "@pE_idNotificacion", pE_idNotificacion.ToString() }, { "@pE_idUsuario", pE_idUsuario }, { "@pE_texto", texto } };
+
+                    oCon.ExecNonQuery("web_Notificaciones_Modificar", CommandType.StoredProcedure, strParameters);
+
+                    return "";
+                }
+                else
+                {
+                    string[,] strParameters = { { "@pE_idNotificacion", pE_idNotificacion.ToString() }, { "@pE_idUsuario", pE_idUsuario }, { "@pE_texto", texto } };
+
+                    oCon.ExecNonQuery("web_Notificaciones_ModificarTitulo", CommandType.StoredProcedure, strParameters);
+
+                    return "";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+
+        }
         
     }
 

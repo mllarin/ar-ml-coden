@@ -29,3 +29,36 @@ C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\bin\DotNetO
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\bin\Datos.pdb
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\obj\Debug\Codene.dll
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\obj\Debug\Codene.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Codene.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Codene.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Antlr3.Runtime.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.Core.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\EntityFramework.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Negocios.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Objetos.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\System.Web.Optimization.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\System.Web.Providers.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\WebGrease.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Datos.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\System.Net.Http.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Negocios.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Objetos.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\EntityFramework.xml
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.Core.xml
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Datos.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\es\System.Net.Http.resources.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\obj\Debug\Codene.csprojResolveAssemblyReference.cache
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\obj\Debug\Codene.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\obj\Debug\Codene.pdb

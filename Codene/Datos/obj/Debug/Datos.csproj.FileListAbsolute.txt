@@ -5,3 +5,10 @@ C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Datos\bin\Debug\Ob
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Datos\obj\Debug\Datos.dll
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Datos\obj\Debug\Datos.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Datos\bin\Debug\Datos.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Datos\bin\Debug\Datos.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Datos\bin\Debug\Objetos.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Datos\bin\Debug\Objetos.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Datos\obj\Debug\Datos.dll
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Datos\obj\Debug\Datos.pdb

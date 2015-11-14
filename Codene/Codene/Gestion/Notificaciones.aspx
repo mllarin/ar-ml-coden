@@ -7,7 +7,7 @@
         }
     </style>
     <script type="text/javascript">
-        function popUp() {
+       /* function popUp() {
             popUpCerrar();
 
             $("#formModificar").show();
@@ -21,7 +21,7 @@
         function popUpCerrar() {
             $("#formModificar").hide();
             //$("#formModificar").fadeOut(300);
-        }
+        }*/
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
@@ -37,7 +37,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <div id="GestionNotificaciones">
         <div style="float: left; padding-left: 10px;">
-            <h4>Nueva Notififación</h4>
+            <h4>Nueva Notificación</h4>
             <br />
             <div>
                 <label for="titulo">Título</label>

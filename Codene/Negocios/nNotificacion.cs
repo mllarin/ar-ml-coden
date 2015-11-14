@@ -31,5 +31,10 @@ namespace Negocios
         {
             return dNotifica.NotificarLeida(pE_idNotificacion, pE_idUsuario);
         }
+
+        public string Modificar(long pE_idNotificacion, string pE_idUsuario, string pE_texto, bool pE_cuerpo)
+        {
+            return dNotifica.Modificar(pE_idNotificacion, pE_idUsuario, pE_texto, pE_cuerpo);
+        }
     }
 }
