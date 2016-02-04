@@ -86,10 +86,27 @@ namespace Codene
             }
         }
 
+       
+        public List<oBanner> Shuffle()
+        {
+            Random rng = new Random();
+            List<oBanner> list = carga_ListaBanners();
+            int n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                oBanner value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
+            return list;
+        }
+
         private void AddBanners()
         {
-
-            foreach (oBanner unBanner in carga_ListaBanners())
+            List<oBanner> banners = Shuffle();
+            foreach (oBanner unBanner in banners)
             {
                 if (unBanner.columna.ToLower() == "izquierda")
                 {
