@@ -29,6 +29,7 @@ C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\bin\DotNetO
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\bin\Datos.pdb
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\obj\Debug\Codene.dll
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Codene\obj\Debug\Codene.pdb
+C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\obj\Debug\Codene.csprojResolveAssemblyReference.cache
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Codene.dll
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Codene.pdb
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Antlr3.Runtime.dll
@@ -59,6 +60,5 @@ C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.OpenId.
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\DotNetOpenAuth.AspNet.xml
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\Datos.pdb
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\bin\es\System.Net.Http.resources.dll
-C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\obj\Debug\Codene.csprojResolveAssemblyReference.cache
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\obj\Debug\Codene.dll
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Codene\obj\Debug\Codene.pdb

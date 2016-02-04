@@ -4,6 +4,5 @@ C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Objetos\obj\Debug\
 C:\Users\Mariano\Documents\Visual Studio 2012\Projects\Codene\Objetos\obj\Debug\Objetos.pdb
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Objetos\bin\Debug\Objetos.dll
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Objetos\bin\Debug\Objetos.pdb
-C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Objetos\obj\Debug\Objetos.csprojResolveAssemblyReference.cache
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Objetos\obj\Debug\Objetos.dll
 C:\Users\Desarrollo\Desktop\ar-ml-coden\Codene\Objetos\obj\Debug\Objetos.pdb

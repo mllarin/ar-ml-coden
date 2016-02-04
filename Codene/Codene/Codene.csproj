@@ -133,6 +133,7 @@
     <Content Include="bnr_cobranzas.swf" />
     <Content Include="cabecera2.swf" />
     <Content Include="cobranzas.htm" />
+    <Content Include="consumirNotificaciones.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\backupcolo.css" />
     <Content Include="Content\jquery-ui-1.7.1.custom.css" />
@@ -515,6 +516,13 @@
     </Compile>
     <Compile Include="Asociarse.aspx.designer.cs">
       <DependentUpon>Asociarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consumirNotificaciones.aspx.cs">
+      <DependentUpon>consumirNotificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumirNotificaciones.aspx.designer.cs">
+      <DependentUpon>consumirNotificaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

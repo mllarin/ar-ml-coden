@@ -23,6 +23,11 @@ namespace Negocios
             return dUsuario.Buscar_Uno(pE_Id, ref pS_Usuario);
         }
 
+        public string Buscar_Todos(ref DataTable dt)
+        {
+            return dUsuario.Buscar_Todos(ref dt);
+        }
+
         public string Validar(ref oUsuario pS_Usuario)
         { 
             return dUsuario.Validar(ref pS_Usuario);

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <title>Codene S.A. - Gestión</title>
     <asp:PlaceHolder ID="PlaceHolder1" runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: System.Web.Optimization.Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" />
     <meta name="viewport" content="width=device-width" />

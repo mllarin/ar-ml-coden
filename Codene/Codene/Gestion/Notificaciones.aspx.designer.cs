@@ -22,15 +22,6 @@ namespace Codene.Gestion {
         protected global::System.Web.UI.WebControls.TextBox txtTitulo;
         
         /// <summary>
-        /// rfvTitulo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTitulo;
-        
-        /// <summary>
         /// txtDescripcion control.
         /// </summary>
         /// <remarks>
@@ -38,15 +29,6 @@ namespace Codene.Gestion {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescripcion;
-        
-        /// <summary>
-        /// rfvDescripcion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDescripcion;
         
         /// <summary>
         /// lblCorrecto control.
@@ -83,5 +65,59 @@ namespace Codene.Gestion {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdNotificaciones;
+        
+        /// <summary>
+        /// formModificar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl formModificar;
+        
+        /// <summary>
+        /// btnCerrarEditar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCerrarEditar;
+        
+        /// <summary>
+        /// hId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hId;
+        
+        /// <summary>
+        /// txtTituloEditar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTituloEditar;
+        
+        /// <summary>
+        /// txtCuerpoEditar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCuerpoEditar;
+        
+        /// <summary>
+        /// BtnModificar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnModificar;
     }
 }

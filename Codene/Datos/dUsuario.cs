@@ -33,6 +33,20 @@ namespace Datos
 
         }
 
+        public string Buscar_Todos(ref DataTable pS_dt)
+        {
+            try
+            {
+                oCon.Carga_Tabla("web_Usuario_BuscarTodos", ref pS_dt);
+
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
         public string Buscar_Uno(long pE_Id, ref oUsuario pS_Usuario)
         {
             string sError = "";

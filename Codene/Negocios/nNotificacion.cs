@@ -22,9 +22,14 @@ namespace Negocios
             return dNotifica.BuscarXUsuario(pE_idUsuario, ref pS_dt);
         }
 
-        public string BuscarTodas(ref DataTable pS_dt)
+        public string Buscar_Todas(ref DataTable pS_dt)
         {
-            return dNotifica.BuscarTodas(ref pS_dt);
+            return dNotifica.Buscar_Todas(ref pS_dt);
+        }
+
+        public string BuscarUna(long pE_Id,ref oNotificacion pS_Notificacion)
+        {
+            return dNotifica.Buscar_Una(pE_Id,ref pS_Notificacion);
         }
 
         public string NotificarLeida(long pE_idNotificacion, string pE_idUsuario)

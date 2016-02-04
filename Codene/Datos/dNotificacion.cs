@@ -47,7 +47,7 @@ namespace Datos
             }
         }
 
-        public string BuscarTodas(ref DataTable pS_dt)
+        public string Buscar_Todas(ref DataTable pS_dt)
         {
             try
             {
@@ -59,6 +59,43 @@ namespace Datos
             {
                 return ex.Message;
             }
+        }
+
+        public string Buscar_Una(long pE_Id, ref oNotificacion pS_Notificacion)
+        {
+            string sError = "";
+            try
+            {
+                SqlDataReader dr = null;
+
+                string[,] strParameters = { { "@pE_idNotificacion", pE_Id.ToString() } };
+
+                dr = oCon.ExecReader("web_Notificaciones_BuscarUna", CommandType.StoredProcedure, strParameters);
+
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        pS_Notificacion.idNotificacion = Convert.ToInt32(dr["idNotificacion"].ToString());
+                        pS_Notificacion.Titulo = (dr["Titulo"] == DBNull.Value ? "" : dr["Titulo"].ToString());
+                        pS_Notificacion.Descripcion = (dr["Descripcion"] == DBNull.Value ? "" : dr["Descripcion"].ToString());
+                    }
+                }
+                else
+                {
+                    throw new Exception("La Notificacion seleccionada no existe");
+                }
+
+                dr.Close();
+                dr = null;
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+
+            return sError;
+
         }
 
         public string NotificarLeida(long pE_idNotificacion, string pE_idUsuario)

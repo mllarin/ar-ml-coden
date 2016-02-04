@@ -57,13 +57,28 @@ namespace Codene
             return sError;
         }
 
-        public void modificarNotificacion(long idNotificacion, string idUsuario, string texto)
+        public void modificarNotificacion(long idNotificacion, string texto, string idUsuario, bool esTitulo)
         {
             oNotificacion unaNotificacionO = new oNotificacion();
             nNotificacion notificacionN = new nNotificacion();
+
+            notificacionN.Modificar(idNotificacion, idUsuario, texto, esTitulo);
             
         }
 
+        public void altaNotificacion(string texto, string titulo)
+        {
+            oNotificacion unaNotificacionO = new oNotificacion();
+            nNotificacion notificacionN = new nNotificacion();
+
+            unaNotificacionO.Titulo = titulo;
+            unaNotificacionO.Descripcion = texto;
+            unaNotificacionO.DadoDeBaja = false;
+
+            notificacionN.Alta(ref unaNotificacionO);
+        }
+
+        
 
     }
 }

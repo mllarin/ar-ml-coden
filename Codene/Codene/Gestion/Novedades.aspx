@@ -41,12 +41,12 @@
             </div>
             <br />
             <div>
-                <label for="imagen" style="float:none;">Imagen</label>
+                <label for="imagen" style="float: none;">Imagen</label>
                 <input id="fuImagen" type="file" size="53" name="fuCurriculum" runat="server" onload="fuImagen_Load" />
                 <asp:Button ID="btnVerImagen" runat="server" Style="margin-top: 10px;" Text="ver imagen" OnClick="btnVerImagen_Click" />
             </div>
             <div>
-                <label for="nombre" style="float:none;">Cuerpo de la Novedad</label>
+                <label for="nombre" style="float: none;">Cuerpo de la Novedad</label>
                 <asp:TextBox TextMode="MultiLine" Width="70%" Height="250" ID="txtCuerpo" runat="server"></asp:TextBox>
             </div>
 
@@ -80,7 +80,7 @@
                 </Columns>
             </asp:GridView>
 
-            <div id="formModificar" runat="server" style="top:30%; left:25%; position: absolute; background-color: #53b460; border: 1px solid #515151; padding-bottom: 10px; min-width:400px;max-width:98%;">
+            <div id="formModificar" runat="server" style="top: 30%; left: 25%; position: absolute; background-color: #53b460; border: 1px solid #515151; padding-bottom: 10px; min-width: 400px; max-width: 98%;">
                 <div id="head" style="width: 100%; height: 20px; background-color: #e6e6e6; padding-top: 8px; border-bottom: solid 1px gray; text-align: left;">
                     <label id="lblTituloEditar" style="padding-left: 10px;">Editar Novedad</label>
                     <asp:Button ID="btnCerrarEditar" runat="server" Text="X" title="Cerrar" Style="border: 1px solid #515151; float: right; margin-right: 5px; margin-top: -5px; height: 20px; cursor: pointer; border-radius: 3px; padding: 0px 4px 0px 4px; font-size: 0.85em;" OnClick="btnCerrarEditar_Click" />
@@ -88,12 +88,12 @@
                 <asp:HiddenField ID="hId" runat="server" />
                 <div style="text-align: left; padding-top: 20px; padding-left: 10px;">
                     <div>
-                        <label for="tituloEditar" style="float:none;">Titulo</label>
+                        <label for="tituloEditar" style="float: none;">Titulo</label>
                         <asp:TextBox ID="txtTituloEditar" runat="server"></asp:TextBox>
                     </div>
                     <br />
                     <div>
-                        <label for="imagen" style="float:none;">Imagen</label>
+                        <label for="imagen" style="float: none;">Imagen</label>
                         <input id="fuImagenEditar" type="file" accept="jpg,png,gif" size="53" name="fuCurriculum1" runat="server" onload="fuImagenEditar_Load" />
                         <asp:Button ID="btnVerImagenEditar" runat="server" Style="margin-top: 10px;" Text="ver imagen" OnClick="btnVerImagenEditar_Click" />
                         <div style="clear: both;">
@@ -103,7 +103,7 @@
                     </div>
                     <br />
                     <div>
-                        <label for="cuerpoEditar" style="float:none;">Cuerpo de la Novedad</label>
+                        <label for="cuerpoEditar" style="float: none;">Cuerpo de la Novedad</label>
                         <asp:TextBox TextMode="MultiLine" ID="txtCuerpoEditar" runat="server"></asp:TextBox>
                     </div>
                     <asp:Button ID="BtnModificar" runat="server" Style="margin-top: 10px;" Text="Modificar" OnClick="BtnModificar_Click" />

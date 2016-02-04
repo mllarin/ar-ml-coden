@@ -1,13 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Gestion/Gestion.Master" AutoEventWireup="true" CodeBehind="Notificaciones.aspx.cs" Inherits="Codene.Gestion.Notificaciones" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Gestion/Gestion.Master" enableEventValidation="true" AutoEventWireup="true" CodeBehind="Notificaciones.aspx.cs" Inherits="Codene.Gestion.Notificaciones" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <style type="text/css">
-        label {
-            width: 100px;
-        }
-    </style>
+
+    <script src="../Scripts/jquery-1.8.2.js"></script>
     <script type="text/javascript">
-       /* function popUp() {
+        function popUp() {
             popUpCerrar();
 
             $("#formModificar").show();
@@ -20,8 +17,8 @@
 
         function popUpCerrar() {
             $("#formModificar").hide();
-            //$("#formModificar").fadeOut(300);
-        }*/
+
+        }
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
@@ -34,40 +31,64 @@
         </div>
     </section>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server" enctype="multipart/form-data">
     <div id="GestionNotificaciones">
-        <div style="float: left; padding-left: 10px;">
+        <div>
             <h4>Nueva Notificación</h4>
             <br />
             <div>
                 <label for="titulo">Título</label>
                 <asp:TextBox ID="txtTitulo" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="rfvTitulo" runat="server" ControlToValidate="txtTitulo" ErrorMessage="Debe completar el campo título" Text="*" CssClass="error"></asp:RequiredFieldValidator>
+               
             </div>
             <div>
                 <label for="descripcion">Descripción</label>
                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" Height="50px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="Debe completar el campo descripción" Text="*" CssClass="error"></asp:RequiredFieldValidator>
+               
             </div>
             <asp:Label runat="server" ID="lblCorrecto" Style="font-size: 1em; color: green;" Visible="false">La notificación fue guardada correctamente</asp:Label>
             <br />
             <asp:ValidationSummary ID="vsAlta" runat="server" CssClass="error" />
             <asp:Button ID="btnGuardar" runat="server" Style="margin-top: 10px;" Text="Guardar" OnClick="btnGuardar_Click" />
         </div>
-        <div style="float: left;">
-            <asp:GridView ID="grdNotificaciones" runat="server" CssClass="grilla" AutoGenerateColumns="False" Style="min-width: 800px;">
+        <div>
+            <hr />
+            <h4>Notificaciones</h4>
+            <br />
+            <asp:GridView ID="grdNotificaciones" runat="server" CssClass="grilla" AutoGenerateColumns="False" Style="min-width: 800px;" OnRowCommand="grdNotificaciones_RowCommand">
                 <Columns>
                     <asp:BoundField DataField="idNotificacion" HeaderText="ID" />
                     <asp:BoundField DataField="titulo" HeaderText="TITULO" />
                     <asp:BoundField DataField="descripcion" HeaderText="DESCRIPCIÓN" />
 
-                    <asp:TemplateField HeaderText="Eliminar">
+                    <asp:TemplateField HeaderText="Editar">
                         <ItemTemplate>
-                            <asp:ImageButton ID="Eliminar" runat="server" ImageUrl="~/Images/Eliminar.png" Style="background-color:transparent;" ToolTip="Eliminar" Height="20" Width="20" CommandArgument='<%#Eval("idNotificacion")%>' CommandName="Eliminar" />
+                            <asp:ImageButton ID="Editar" runat="server" ImageUrl="~/Images/Editar.png" Style="background-color: transparent;" ToolTip="Editar" Height="20" Width="20" CommandArgument='<%#Eval("idNotificacion")%>' CommandName="Editar" OnClientClick="popUp();" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
+
+            <div id="formModificar" runat="server" style="top: 30%; left: 25%; position: absolute; background-color: #53b460; border: 1px solid #515151; padding-bottom: 10px; min-width: 400px; max-width: 98%;">
+                <div id="head" style="width: 100%; height: 20px; background-color: #e6e6e6; padding-top: 8px; border-bottom: solid 1px gray; text-align: left;">
+                    <label id="lblTituloEditar" style="padding-left: 10px;">Editar Notificacion</label>
+                    <asp:Button ID="btnCerrarEditar" runat="server" Text="X" title="Cerrar" Style="border: 1px solid #515151; float: right; margin-right: 5px; margin-top: -5px; height: 20px; cursor: pointer; border-radius: 3px; padding: 0px 4px 0px 4px; font-size: 0.85em;" OnClick="btnCerrarEditar_Click" />
+                </div>
+                <asp:HiddenField ID="hId" runat="server" />
+                <div style="text-align: left; padding-top: 20px; padding-left: 10px;">
+                    <div>
+                        <label for="tituloEditar" style="float: none;">Titulo</label>
+                        <asp:TextBox ID="txtTituloEditar" Enabled="false" runat="server"></asp:TextBox>
+                    </div>
+                    <br />
+                    <div>
+                        <label for="cuerpoEditar" style="float: none;">Descripción</label>
+                        <asp:TextBox TextMode="MultiLine" ID="txtCuerpoEditar" runat="server"></asp:TextBox>
+                    </div>
+                    <asp:Button ID="BtnModificar" runat="server" Style="margin-top: 10px;" Text="Modificar" OnClick="BtnModificar_Click" />
+                </div>
+            </div>
         </div>
+
     </div>
 </asp:Content>
